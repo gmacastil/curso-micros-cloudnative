@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ms-curso-demo2
+  namespace: sabado
+spec:
+  selector:
+    app: ms-curso-demo2
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+  type: ClusterIP

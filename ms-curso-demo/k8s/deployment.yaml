@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ms-curso-demo1
+  namespace: sabado
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ms-curso-demo1
+  template:
+    metadata:
+      labels:
+        app: ms-curso-demo1
+    spec:
+      containers:
+      - name: ms-curso-demo1
+        image: mauron/ms-curso-demo:6
+        ports:
+        - containerPort: 8080
+        envFrom:
+        - configMapRef:
+            name: ms-curso-db-configmap
+        - configMapRef:
+            name: ms-curso-demo-configmap
+        - secretRef:
+            name: ms-curso-demo1-secret
+        readinessProbe:
+            failureThreshold: 3
+            httpGet:
+              path: /
+              port: 8080
+            periodSeconds: 3
+            initialDelaySeconds: 31
+        livenessProbe:
+            failureThreshold: 3
+            httpGet:
+              path: /
+              port: 8080
+            periodSeconds: 10
+            initialDelaySeconds: 50
+     
+
+        resources:
+          limits:
+            memory: "256Mi"
+            cpu: "500m"
+          requests:
+            memory: "200Mi"
+            cpu: "200m"
+      restartPolicy: Always

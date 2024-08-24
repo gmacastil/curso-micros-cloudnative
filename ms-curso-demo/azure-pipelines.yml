@@ -1,0 +1,67 @@
+# Docker
+# Build and push an image to Azure Container Registry
+# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
+
+trigger:
+- mysql
+
+resources:
+- repo: self
+
+variables:
+  # Container registry service connection established during pipeline creation
+  dockerRegistryServiceConnection: 'e699c166-dfec-49c3-9877-d70b35b7592b'
+  imageRepository: 'mscursodemogit'
+  containerRegistry: 'miregistrysabado.azurecr.io'
+  dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
+  tag: '$(Build.BuildId)'
+
+  # Agent VM image name
+  vmImageName: 'ubuntu-latest'
+
+stages:
+- stage: Build
+  displayName: Build and push stage
+  jobs:
+  - job: Build
+    displayName: Build
+    pool:
+      vmImage: $(vmImageName)
+    steps:
+    
+    - task: JavaToolInstaller@0
+      displayName: Tool JDK 21
+      inputs:
+        versionSpec: '21'
+        jdkArchitectureOption: 'x64'
+        jdkSourceOption: 'PreInstalled'
+
+    - task: Maven@4
+      displayName: Compilar
+      inputs:
+        mavenPomFile: 'pom.xml'
+        goals: 'package -DskipTests'
+        publishJUnitResults: false
+        javaHomeOption: 'JDKVersion'
+        mavenVersionOption: 'Default'
+        mavenAuthenticateFeed: false
+        effectivePomSkip: false
+        sonarQubeRunAnalysis: false
+        
+    - task: Docker@2
+      displayName: Construir y Publicar imagen docker
+      inputs:
+        command: buildAndPush
+        repository: $(imageRepository)
+        dockerfile: $(dockerfilePath)
+        containerRegistry: $(dockerRegistryServiceConnection)
+        tags: |
+          $(tag)
+
+    - task: KubernetesManifest@1
+      inputs:
+        action: 'deploy'
+        connectionType: 'kubernetesServiceConnection'
+        kubernetesServiceConnection: 'aks-sabado'
+        namespace: 'sabado'
+        manifests: 'k8s/*'

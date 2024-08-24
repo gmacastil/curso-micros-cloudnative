@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: sabado-ingress
+  namespace: sabado
+spec:
+  ingressClassName: webapprouting.kubernetes.azure.com
+  rules:
+  - http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: ms-curso-demo1
+            port:
+              number: 8080
+      - path: /dos
+        pathType: Prefix
+        backend:
+          service:
+            name: ms-curso-demo2
+            port:
+              number: 8080

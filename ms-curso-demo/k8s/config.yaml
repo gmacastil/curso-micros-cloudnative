@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ms-curso-db-configmap
+  namespace: sabado
+data:
+  URL: "jdbc:mysql://mysqlcurso.mysql.database.azure.com:3306/test"
+  USERNAME: "curso"
+  TZ: "America/Bogota"
+  JAVA_OPTS: "-Xmx256m"

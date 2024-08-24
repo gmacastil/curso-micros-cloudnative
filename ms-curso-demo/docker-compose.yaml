@@ -1,0 +1,30 @@
+services:
+  ms-curso-demo1:
+    image: ms-curso-demo:8
+    container_name: ms-curso-demo1
+    ports:
+      - "8080:8080"
+    restart: always
+    environment:
+      URL: "jdbc:mysql://mysqlcurso.mysql.database.azure.com:3306/test"
+      PASSWORD: "litethinking2024*"
+      USERNAME: "curso"
+      TZ: "America/Bogota"
+      JAVA_OPTS: "-Xmx256m"
+    networks:
+      - micros
+  
+  rabbitmq_clase:
+    image: rabbitmq:3-management-alpine
+    container_name: 'rabbitmq_clase'
+    ports:
+        - 5672:5672
+        - 15672:15672
+    networks:
+        - micros
+
+
+networks:
+  micros:
+    external:
+      name: micros
