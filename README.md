@@ -45,7 +45,7 @@
      - Ejemplo de aplicación Spring Boot basada en microservicios: [GitHub - spring-microservices-example](https://github.com/techprimers/spring-boot-microservices-example)
 
 
-![Alt text](./images/int-eda.png)
+![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/tree/main/images/int-eda.png)
 
 **5. De Monolito a Microservicios**
    - **Descripción**: La transición de una arquitectura monolítica a una basada en microservicios es un proceso complejo que implica dividir el monolito en servicios más pequeños y autónomos, manteniendo la funcionalidad existente mientras se mejoran aspectos como la escalabilidad y la flexibilidad.
@@ -56,8 +56,8 @@
      - Ejemplo de migración de monolito a microservicios en Java: [GitHub - monolith-to-microservices](https://github.com/indrabasak/monolith-to-microservices)
 
 
-![Alt text](./images/monolito1.png)
-![Alt text](./images/distibuida1.png)
+![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/tree/main/images/monolito1.png)
+![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/tree/main/images/distibuida1.png)
 
 
 **6. De Microservicios a una Aplicación Distribuida**
@@ -68,7 +68,7 @@
    - **Código Ejemplo**:
      - Ejemplo de sistema distribuido usando Kubernetes y microservicios: [GitHub - k8s-distributed](https://github.com/kubernetes/kubernetes)
 
-![Alt text](./images/monolito2.png.png)
+![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/tree/main/images/monolito2.png.png)
 
 **7. Microservicios en On-premises y Cloud**
    - **Descripción**: Implementar microservicios en entornos on-premises y en la nube presenta desafíos diferentes. En la nube, se aprovechan servicios gestionados que facilitan el escalado y la resiliencia, mientras que on-premises puede requerir una mayor inversión en infraestructura y herramientas.
@@ -78,9 +78,9 @@
    - **Código Ejemplo**:
      - Ejemplo de despliegue de microservicios en AWS: [GitHub - aws-microservices](https://github.com/aws-samples/aws-microservices-deploy-options)
 
-![Alt text](./images/onpremises1.png)
+![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/tree/main/images/onpremises1.png)
 
-![Alt text](./images/cloud1.png)
+![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/tree/main/images/cloud1.png)
 
 
 ### Sesión 2: Desarrollo de Microservicios con Spring Boot
@@ -95,7 +95,7 @@
    - **Código Ejemplo**:
      - Ejemplo básico de microservicio con Spring Boot 3: [GitHub - spring-boot-3-example](https://github.com/spring-guides/gs-spring-boot)
 
-![Alt text](./images/micro-rest.png)
+![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/tree/main/images/micro-rest.png)
 
 **2. Framework Spring Boot**
    - **Spring Boot Initializr**:
@@ -113,10 +113,10 @@
      - **Código Ejemplo**:
        - Ejemplo de uso de arquetipos en un proyecto Spring Boot: [GitHub - spring-archetype-example](https://github.com/spring-guides/gs-maven)
 
-![Alt text](./images/artifact-lib.png)
+![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/tree/main/images/artifact-lib.png)
 
 
-![Alt text](./images/microfront.png.png)
+![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/tree/main/images/microfront.png.png)
 
 **3. Buenas Prácticas de Construcción de Microservicios**
    - **Frameworks**:
@@ -183,9 +183,9 @@
      - Creación de una imagen Docker para un microservicio Spring Boot: [GitHub - docker-spring-boot-example](https://github.com/spring-guides/gs-spring-boot-docker)
 
 
-![Alt text](./images/custom-img.png.png)
+![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/tree/main/images/custom-img.png.png)
 
-![Alt text](./images/img-container.png)
+![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/tree/main/images/img-container.png)
 
 ### Sesión 3: Construcción y Testing de Microservicios
 
@@ -202,7 +202,7 @@
    - **Código Ejemplo**:
      - Ejemplo de microservicio con acceso a base de datos: [GitHub - spring-data-example](https://github.com/spring-guides/gs-accessing-data-mysql)
 
-![Alt text](./images/micro-rest.png)
+![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/tree/main/images/micro-rest.png)
 
 **2. Construcción de un Test en Postman**
    - **Descripción**: Postman es una herramienta popular para el desarrollo y pruebas de API. Esta sección cubre cómo crear y ejecutar pruebas para el microservicio desarrollado.
@@ -244,7 +244,7 @@
    - **Código Ejemplo**:
      - Ejemplo de Dockerfile optimizado: [GitHub - optimized-dockerfile](https://github.com/GoogleContainerTools/distroless)
 
-![Alt text](./images/push.png)
+![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/tree/main/images/push.png)
 
 **6. Ejecución de Contenedores con Docker Run**
    - **Descripción**: `docker run` es el comando principal para ejecutar contenedores Docker. Esta sección cubre cómo iniciar y gestionar contenedores utilizando este comando.
@@ -256,11 +256,11 @@
    - **Código Ejemplo**:
      - Ejemplo de ejecución de un contenedor con Docker Run: [GitHub - docker-run-examples](https://github.com/docker/labs/blob/master/beginner/chapters/run.md)
 
-![Alt text](./images/desa1.png)
+![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/tree/main/images/desa1.png)
 
-![Alt text](./images/desa2.png)
+![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/tree/main/images/desa2.png)
 
-![Alt text](./images/desa3.png)
+![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/tree/main/images/desa3.png)
 
 ### Sesión 4: Gestión y Despliegue de Contenedores (6h)
 
@@ -276,7 +276,7 @@
    - **Código Ejemplo**:
      - Ejemplo de configuración con Docker Compose: [GitHub - docker-compose-example](https://github.com/docker/awesome-compose)
 
-![Alt text](./images/portabilidad.png)
+![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/tree/main/images/portabilidad.png)
 
 **2. Sizing de Contenerización**
    - **Descripción**: El dimensionamiento de contenedores es crucial para optimizar el uso de recursos y mejorar la eficiencia. Esta sección cubre cómo asignar CPU, memoria y otras restricciones de recursos de manera óptima.
@@ -377,7 +377,7 @@
    - **Código Ejemplo**:
      - Ejemplo de manifiestos YAML para Kubernetes: [GitHub - kubernetes-yaml-example](https://github.com/kubernetes/examples)
 
-![Alt text](./images/yaml.png)
+![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/tree/main/images/yaml.png)
 
 ### Sesión 6: Kubernetes y DevSecOps
 
@@ -448,11 +448,11 @@
    - **Código Ejemplo**:
      - Ejemplo de despliegue de aplicaciones con GitOps usando ArgoCD: [GitHub - argocd-gitops-example](https://github.com/argoproj/argo-cd-example-apps)
 
-![Alt text](./images/password1.png)
+![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/tree/main/images/password1.png)
 
-![Alt text](./images/secretos1.png)
+![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/tree/main/images/secretos1.png)
 
-![Alt text](./images/secretos2.png)
+![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/tree/main/images/secretos2.png)
 
 ### Sesión 7: Seguridad y Observabilidad en Microservicios
 
