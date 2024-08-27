@@ -12,7 +12,7 @@
      - [Patterns of Enterprise Application Architecture (Martin Fowler)](https://martinfowler.com/eaaCatalog/)
      - [Microservices Patterns (Chris Richardson)](https://microservices.io/patterns/)
    - **Código Ejemplo**:
-     - Ejemplo de arquitectura basada en eventos con Kafka: [GitHub - event-driven-kafka](https://github.com/confluentinc/examples/tree/7.0.1-post/kafka-streams/src/main/java/io/confluent/examples/streams)
+     - Ejemplo de arquitectura basada en eventos con Kafka: [GitHub - event-driven-kafka](https://github.com/confluentinc/examples/tree/7.0.1-post/microservices-orders)
 
 **2. Patrones de Diseño**
    - **Descripción**: Los patrones de diseño son soluciones reutilizables a problemas recurrentes en el diseño de software. En el desarrollo de microservicios, los patrones más relevantes incluyen:
@@ -42,7 +42,7 @@
      - [Microservices (Martin Fowler)](https://martinfowler.com/articles/microservices.html)
      - [What are Microservices? (AWS)](https://aws.amazon.com/microservices/)
    - **Código Ejemplo**:
-     - Ejemplo de aplicación Spring Boot basada en microservicios: [GitHub - spring-microservices-example](https://github.com/techprimers/spring-boot-microservices-example)
+     - Ejemplo de aplicación Spring Boot basada en microservicios: [GitHub - spring-microservices-example](https://github.com/TechPrimers/learning-path-spring-boot-microservices)
 
 
 ![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/blob/main/images/int-eda.png)
@@ -52,8 +52,8 @@
    - **Referencias**:
      - [Refactoring: Improving the Design of Existing Code (Martin Fowler)](https://martinfowler.com/books/refactoring.html)
      - [Monolithic to Microservices Architecture (Google Cloud)](https://cloud.google.com/architecture/monolithic-to-microservices-architecture)
-   - **Código Ejemplo**:
-     - Ejemplo de migración de monolito a microservicios en Java: [GitHub - monolith-to-microservices](https://github.com/indrabasak/monolith-to-microservices)
+   - **Ejemplo**:
+     - Ejemplo de migración de monolito a microservicios: [GitHub - monolith-to-microservices](https://github.com/SaraLerma/Monolith-To-Microservices)
 
 
 ![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/blob/main/images/monolito1.png)
