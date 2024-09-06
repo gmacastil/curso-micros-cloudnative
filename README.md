@@ -51,7 +51,7 @@
    - **Descripción**: La transición de una arquitectura monolítica a una basada en microservicios es un proceso complejo que implica dividir el monolito en servicios más pequeños y autónomos, manteniendo la funcionalidad existente mientras se mejoran aspectos como la escalabilidad y la flexibilidad.
    - **Referencias**:
      - [Refactoring: Improving the Design of Existing Code (Martin Fowler)](https://martinfowler.com/books/refactoring.html)
-     - [[Monolithic to Microservices Architecture (Google Cloud)](https://cloud.google.com/architecture/monolithic-to-microservices-architecture)](https://cloud.google.com/architecture/microservices-architecture-introduction)
+     - [Monolithic to Microservices Architecture (Google Cloud)](https://cloud.google.com/architecture/microservices-architecture-introduction)
    - **Ejemplo**:
      - Ejemplo de migración de monolito a microservicios: [GitHub - monolith-to-microservices](https://github.com/SaraLerma/Monolith-To-Microservices)
 
