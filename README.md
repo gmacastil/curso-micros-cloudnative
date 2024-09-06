@@ -262,7 +262,7 @@
 
 ![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/blob/main/images/desa3.png)
 
-### Sesión 4: Gestión y Despliegue de Contenedores (6h)
+### Sesión 4: Gestión y Despliegue de Contenedores
 
 #### Objetivo: Profundizar en la gestión de contenedores y en su despliegue en diferentes entornos.
 
@@ -347,7 +347,11 @@
    - **Código Ejemplo**:
      - Ejemplo de uso de Spring Boot Actuator con Kubernetes: [GitHub - actuator-kubernetes-example](https://github.com/spring-guides/gs-actuator-service)
 
-**4. Arquitecturas On-premises vs Cloud**
+### Sesión 6: Kubernetes y DevSecOps
+
+#### Objetivo: Implementar aplicaciones en Kubernetes en la nube y automatizar su despliegue con prácticas DevSecOps.
+
+**1. Arquitecturas On-premises vs Cloud**
    - **Descripción**: Esta sección proporciona una comparativa detallada entre la implementación de microservicios en entornos on-premises y en la nube, destacando las diferencias en términos de infraestructura, escalabilidad, costos, y mantenimiento.
      - **On-premises**: Ventajas y desventajas de mantener la infraestructura en local, incluyendo control total y costos fijos.
      - **Cloud**: Beneficios de la escalabilidad automática, modelos de pago por uso, y alta disponibilidad en la nube.
@@ -357,7 +361,7 @@
    - **Código Ejemplo**:
      - No se requiere código para esta sección, enfoque en comparativas y decisiones estratégicas.
 
-**5. Conceptos de Kubernetes: Arquitectura e Implementación On-premises**
+**2. Conceptos de Kubernetes: Arquitectura e Implementación On-premises**
    - **Descripción**: Kubernetes es la plataforma de orquestación de contenedores más popular. Esta sección introduce su arquitectura básica, componentes principales, y cómo desplegar un clúster en un entorno on-premises.
      - **Componentes de Kubernetes**: Explicación de componentes clave como el API Server, etcd, Controller Manager, y kubelet.
      - **Despliegue On-premises**: Instalación y configuración de un clúster Kubernetes en un entorno local utilizando herramientas como kubeadm o k3s.
@@ -367,7 +371,18 @@
    - **Código Ejemplo**:
      - Ejemplo de despliegue de un clúster con k3s: [GitHub - k3s-example](https://github.com/k3s-io/k3s)
 
-**6. Manifiestos de Despliegue en Kubernetes**
+**3. Arquitectura e Implementación Kubernetes en Cloud**
+   - **Descripción**: Kubernetes es una plataforma de orquestación de contenedores ampliamente utilizada en entornos cloud. En esta sección, aprenderás cómo desplegar un clúster Kubernetes en proveedores cloud como AWS, Azure, o Google Cloud.
+     - **Provisión de Clúster en Cloud**: Uso de herramientas como EKS (AWS), AKS (Azure), o GKE (Google Cloud) para desplegar Kubernetes.
+     - **Configuración y Escalabilidad**: Configuración de nodos, networking, y almacenamiento. Estrategias para escalar automáticamente en función de la demanda.
+   - **Referencias**:
+     - [Amazon EKS Documentation](https://docs.aws.amazon.com/eks/index.html)
+     - [Azure Kubernetes Service Documentation](https://docs.microsoft.com/en-us/azure/aks/)
+     - [Google Kubernetes Engine Documentation](https://cloud.google.com/kubernetes-engine/docs)
+   - **Código Ejemplo**:
+     - Ejemplo de despliegue de un clúster en AWS EKS usando Terraform: [GitHub - eks-terraform-example](https://github.com/terraform-aws-modules/terraform-aws-eks)
+
+**4. Manifiestos de Despliegue en Kubernetes**
    - **Descripción**: Los manifiestos de Kubernetes son archivos YAML que definen la configuración de recursos como Pods, Services, y Deployments. Esta sección detalla cómo crear y gestionar estos manifiestos para desplegar y escalar aplicaciones en Kubernetes.
      - **Creación de Manifiestos**: Guía para escribir manifiestos básicos de Kubernetes, incluyendo Pods, Services, y Deployments.
      - **Gestión y Actualización**: Uso de herramientas como `kubectl` para aplicar, actualizar y gestionar recursos en un clúster Kubernetes.
@@ -379,22 +394,12 @@
 
 ![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/blob/main/images/yaml.png)
 
-### Sesión 6: Kubernetes y DevSecOps
+### Sesión 7: DevSecOps
 
-#### Objetivo: Implementar aplicaciones en Kubernetes en la nube y automatizar su despliegue con prácticas DevSecOps.
+#### Objetivo: Comprender los conceptos y prácticas de automatización y control en el ciclo de vida de desarrollo.
 
-**1. Arquitectura e Implementación Kubernetes en Cloud**
-   - **Descripción**: Kubernetes es una plataforma de orquestación de contenedores ampliamente utilizada en entornos cloud. En esta sección, aprenderás cómo desplegar un clúster Kubernetes en proveedores cloud como AWS, Azure, o Google Cloud.
-     - **Provisión de Clúster en Cloud**: Uso de herramientas como EKS (AWS), AKS (Azure), o GKE (Google Cloud) para desplegar Kubernetes.
-     - **Configuración y Escalabilidad**: Configuración de nodos, networking, y almacenamiento. Estrategias para escalar automáticamente en función de la demanda.
-   - **Referencias**:
-     - [Amazon EKS Documentation](https://docs.aws.amazon.com/eks/index.html)
-     - [Azure Kubernetes Service Documentation](https://docs.microsoft.com/en-us/azure/aks/)
-     - [Google Kubernetes Engine Documentation](https://cloud.google.com/kubernetes-engine/docs)
-   - **Código Ejemplo**:
-     - Ejemplo de despliegue de un clúster en AWS EKS usando Terraform: [GitHub - eks-terraform-example](https://github.com/terraform-aws-modules/terraform-aws-eks)
 
-**2. Conceptos de DevSecOps**
+**1. Conceptos de DevSecOps**
    - **Descripción**: DevSecOps es una práctica que integra la seguridad en cada fase del ciclo de vida del desarrollo. Esta sección explora cómo incluir controles de seguridad en pipelines CI/CD.
      - **Integración de Seguridad**: Uso de herramientas como Snyk, Aqua Security, y Trivy para análisis de vulnerabilidades en contenedores e imágenes Docker.
      - **Compliance y Policies**: Implementación de políticas de seguridad y cumplimiento en pipelines.
@@ -404,7 +409,7 @@
    - **Código Ejemplo**:
      - Pipeline de Jenkins con integración de seguridad usando Sonarqube: [Jenkins-Sonarqube-example](https://callmezydd.medium.com/unlocking-code-quality-integrating-jenkins-pipeline-with-sonarqube-and-github-7f450f1c90ab))
 
-**3. Pipelines de CI/CD**
+**2. Pipelines de CI/CD**
    - **Descripción**: La integración continua y el despliegue continuo son fundamentales para la entrega rápida y confiable de software. Aquí aprenderás a construir pipelines CI/CD optimizados para Kubernetes.
      - **Configuración de Pipelines**: Creación de pipelines utilizando herramientas como Jenkins, GitLab CI/CD, y GitHub Actions.
      - **Despliegue en Kubernetes**: Automatización del despliegue de aplicaciones en Kubernetes directamente desde el pipeline.
@@ -416,7 +421,7 @@
    - **Código Ejemplo**:
      - Ejemplo de pipeline CI/CD para despliegue en Kubernetes: [GitHub - kubernetes-cicd-pipeline-example](https://github.com/Akshit8/ci-cd-k8s)
 
-**4. Logging**
+**3. Logging**
    - **Uso de Suite ELK para Gestión de Logs**
      - **Descripción**: ELK (Elasticsearch, Logstash, Kibana) es una solución completa para la centralización, búsqueda, y visualización de logs. Aquí aprenderás a implementar la suite ELK en un clúster Kubernetes.
        - **Elasticsearch y Logstash**: Configuración para recoger y almacenar logs de aplicaciones y sistemas.
@@ -437,7 +442,7 @@
      - **Código Ejemplo**:
        - Ejemplo de configuración avanzada de Logback: [GitHub - spring-boot-logback-example](https://github.com/rfding/spring-boot-elk-sample)
 
-**5. Estrategias de Despliegue en Kubernetes con GitOps**
+**4. Estrategias de Despliegue en Kubernetes con GitOps**
    - **Descripción**: GitOps es un enfoque que utiliza repositorios Git como fuente única de verdad para la automatización de despliegues en Kubernetes. Aquí explorarás cómo implementar GitOps para despliegues continuos y confiables.
      - **Herramientas GitOps**: Uso de herramientas como ArgoCD y Flux para automatizar el despliegue y la gestión del ciclo de vida de aplicaciones en Kubernetes.
      - **Flujos de Trabajo GitOps**: Implementación de pipelines GitOps para aplicar cambios automáticamente a través de repositorios Git.
@@ -454,7 +459,7 @@
 
 ![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/blob/main/images/secretos2.png)
 
-### Sesión 7: Seguridad y Observabilidad en Microservicios
+### Sesión 8: Seguridad y Observabilidad en Microservicios
 
 #### Objetivo: Integrar autenticación, observabilidad y arquitecturas orientadas a eventos en microservicios.
 
