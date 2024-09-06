@@ -347,9 +347,9 @@
    - **Código Ejemplo**:
      - Ejemplo de uso de Spring Boot Actuator con Kubernetes: [GitHub - actuator-kubernetes-example](https://github.com/spring-guides/gs-actuator-service)
 
-### Sesión 6: Kubernetes y DevSecOps
+### Sesión 6: Kubernetes
 
-#### Objetivo: Implementar aplicaciones en Kubernetes en la nube y automatizar su despliegue con prácticas DevSecOps.
+#### Objetivo: Implementar aplicaciones en Kubernetes.
 
 **1. Arquitecturas On-premises vs Cloud**
    - **Descripción**: Esta sección proporciona una comparativa detallada entre la implementación de microservicios en entornos on-premises y en la nube, destacando las diferencias en términos de infraestructura, escalabilidad, costos, y mantenimiento.
@@ -459,9 +459,9 @@
 
 ![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/blob/main/images/secretos2.png)
 
-### Sesión 8: Seguridad y Observabilidad en Microservicios
+### Sesión 8: Observabilidad en Microservicios
 
-#### Objetivo: Integrar autenticación, observabilidad y arquitecturas orientadas a eventos en microservicios.
+#### Objetivo: Integrar la observabilidad sobre arquitecturas orientadas a microservicios
 
 **1. Observabilidad**
    - **Collectores de OpenTelemetry**
@@ -484,7 +484,11 @@
      - **Código Ejemplo**:
        - Ejemplo de configuración de Prometheus y Grafana para monitorear un clúster Kubernetes: [GitHub - prometheus-grafana-k8s-example](https://github.com/prometheus-operator/kube-prometheus)
 
-**2. Arquitecturas EDA (Event-Driven Architecture)**
+### Sesión 9: Arquitecturas EDA
+
+#### Objetivo: Comprender los conceptos de las arquitecturas orientadas a eventos
+
+**1. Arquitecturas EDA (Event-Driven Architecture)**
    - **Implementación de Arquitecturas Orientadas a Eventos**
      - **Descripción**: Las arquitecturas orientadas a eventos (EDA) permiten la construcción de sistemas reactivos y desacoplados mediante la emisión y consumo de eventos. En esta sección, exploraremos cómo implementar EDA en microservicios.
        - **Diseño de EDA**: Principios básicos del diseño de sistemas orientados a eventos, incluyendo la modelación de eventos y flujos de datos.
