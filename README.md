@@ -51,7 +51,7 @@
    - **Descripción**: La transición de una arquitectura monolítica a una basada en microservicios es un proceso complejo que implica dividir el monolito en servicios más pequeños y autónomos, manteniendo la funcionalidad existente mientras se mejoran aspectos como la escalabilidad y la flexibilidad.
    - **Referencias**:
      - [Refactoring: Improving the Design of Existing Code (Martin Fowler)](https://martinfowler.com/books/refactoring.html)
-     - [Monolithic to Microservices Architecture (Google Cloud)](https://cloud.google.com/architecture/monolithic-to-microservices-architecture)
+     - [[Monolithic to Microservices Architecture (Google Cloud)](https://cloud.google.com/architecture/monolithic-to-microservices-architecture)](https://cloud.google.com/architecture/microservices-architecture-introduction)
    - **Ejemplo**:
      - Ejemplo de migración de monolito a microservicios: [GitHub - monolith-to-microservices](https://github.com/SaraLerma/Monolith-To-Microservices)
 
@@ -63,18 +63,18 @@
 **6. De Microservicios a una Aplicación Distribuida**
    - **Descripción**: Una aplicación distribuida basada en microservicios escala más allá de un conjunto básico de servicios, integrando características como gestión de transacciones distribuidas, comunicación asíncrona, y la gestión avanzada de estado.
    - **Referencias**:
-     - [Designing Distributed Systems (Brendan Burns)](https://azure.microsoft.com/en-us/resources/designing-distributed-systems/en-us/)
+     - [Build cloud-native applications in Azure](https://azure.microsoft.com/en-us/solutions/cloud-native-apps/)
      - [Distributed Systems (Maarten van Steen, Andrew S. Tanenbaum)](https://www.distributed-systems.net/index.php/books/ds3/)
    - **Código Ejemplo**:
      - Ejemplo de sistema distribuido usando Kubernetes y microservicios: [GitHub - k8s-distributed](https://github.com/kubernetes/kubernetes)
 
-![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/blob/main/images/monolito2.png.png)
+![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/blob/main/images/monolito2.png)
 
 **7. Microservicios en On-premises y Cloud**
    - **Descripción**: Implementar microservicios en entornos on-premises y en la nube presenta desafíos diferentes. En la nube, se aprovechan servicios gestionados que facilitan el escalado y la resiliencia, mientras que on-premises puede requerir una mayor inversión en infraestructura y herramientas.
    - **Referencias**:
-     - [Migrating to Cloud-Native Application Architectures (Matt Stine)](https://pivotal.io/migrating-to-cloud-native-application-architectures-ebook)
-     - [Hybrid Cloud Strategy (Microsoft Azure)](https://azure.microsoft.com/en-us/solutions/hybrid-cloud/)
+     - [Migrating to Cloud-Native Application Architectures (Matt Stine)](https://tanzu.vmware.com/content/ebooks/migrating-to-cloud-native-application-architectures)
+     - [Hybrid Cloud Strategy (Microsoft Azure)](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-are-private-public-hybrid-clouds/))
    - **Código Ejemplo**:
      - Ejemplo de despliegue de microservicios en AWS: [GitHub - aws-microservices](https://github.com/aws-samples/aws-microservices-deploy-options)
 
@@ -91,7 +91,7 @@
    - **Descripción**: Spring Boot 3 ofrece un conjunto de herramientas y bibliotecas optimizadas para el desarrollo de microservicios. Con soporte mejorado para Java 17 y GraalVM, Spring Boot 3 permite construir aplicaciones más rápidas y eficientes.
    - **Referencias**:
      - [Spring Boot 3 Documentation](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/)
-     - [Migrating to Spring Boot 3](https://spring.io/blog/2022/11/24/migrating-to-spring-boot-3-0)
+     - [Migrating to Spring Boot 3](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-3.0-Migration-Guide)
    - **Código Ejemplo**:
      - Ejemplo básico de microservicio con Spring Boot 3: [GitHub - spring-boot-3-example](https://github.com/spring-guides/gs-spring-boot)
 
@@ -109,14 +109,14 @@
      - **Descripción**: Los arquetipos en Spring Boot ayudan a estructurar proyectos de manera consistente y eficiente, promoviendo la reutilización de componentes y patrones de diseño comunes.
      - **Referencias**:
        - [Maven Archetypes](https://maven.apache.org/archetypes/)
-       - [Spring Boot Maven Plugin](https://docs.spring.io/spring-boot/docs/current/maven-plugin/reference/htmlsingle/)
+       - [Spring Boot Maven Plugin](https://docs.spring.io/spring-boot/maven-plugin/index.html)
      - **Código Ejemplo**:
-       - Ejemplo de uso de arquetipos en un proyecto Spring Boot: [GitHub - spring-archetype-example](https://github.com/spring-guides/gs-maven)
+       - Ejemplo de uso de arquetipos en un proyecto Spring Boot: [GitHub - spring-archetype-example](https://github.com/netyjq/spring-boot-archetype)
 
 ![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/blob/main/images/artifact-lib.png)
 
 
-![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/blob/main/images/microfront.png.png)
+![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/blob/main/images/microfront.png)
 
 **3. Buenas Prácticas de Construcción de Microservicios**
    - **Frameworks**:
@@ -125,7 +125,7 @@
        - [Spring Cloud Documentation](https://spring.io/projects/spring-cloud)
        - [Spring Security Documentation](https://spring.io/projects/spring-security)
      - **Código Ejemplo**:
-       - Configuración de un microservicio con Spring Cloud y Spring Security: [GitHub - spring-cloud-security-example](https://github.com/spring-guides/gs-centralized-configuration)
+       - Configuración de un microservicio con Spring Cloud y Spring Security: [GitHub - spring-cloud-security-example](https://medium.com/@tericcabrel/implement-jwt-authentication-in-a-spring-boot-3-application-5839e4fd8fac)
 
    - **Logging**:
      - **Descripción**: Implementación de logs eficaces utilizando frameworks como Logback o SLF4J, y técnicas para la centralización y análisis de logs en entornos distribuidos.
@@ -133,14 +133,14 @@
        - [Spring Boot Logging Documentation](https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.logging)
        - [Logback Project](https://logback.qos.ch/)
      - **Código Ejemplo**:
-       - Configuración de Logback en Spring Boot: [GitHub - spring-logging-example](https://github.com/spring-guides/gs-logging)
+       - Configuración de Logback en Spring Boot: [Spring-logging-example](https://www.baeldung.com/spring-boot-logging)
 
    - **Variables de Ambiente**:
      - **Descripción**: Gestión de configuraciones dinámicas mediante perfiles de Spring y la inyección de variables de entorno para la adaptación de la aplicación a diferentes entornos (desarrollo, staging, producción).
      - **Referencias**:
        - [Spring Boot External Configuration](https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.external-config)
      - **Código Ejemplo**:
-       - Uso de perfiles en Spring Boot: [GitHub - spring-profiles-example](https://github.com/spring-guides/gs-profiles)
+       - Uso de perfiles en Spring Boot: [GitHub - spring-profiles-example](https://docs.spring.io/spring-boot/reference/features/profiles.html)
 
    - **Testing**:
      - **Descripción**: Pruebas unitarias y de integración utilizando frameworks como JUnit 5, Mockito, y Spring Test, asegurando la calidad y fiabilidad de los microservicios.
@@ -148,7 +148,7 @@
        - [Testing in Spring Boot](https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.testing)
        - [JUnit 5 Documentation](https://junit.org/junit5/docs/current/user-guide/)
      - **Código Ejemplo**:
-       - Pruebas unitarias y de integración en un microservicio: [GitHub - spring-testing-example](https://github.com/spring-guides/gs-testing)
+       - Pruebas unitarias y de integración en un microservicio: [GitHub - spring-testing-example](https://github.com/eugenp/tutorials/tree/master/spring-boot-modules/spring-boot-testing)
 
    - **Gobierno**:
      - **Descripción**: Gestión y control de microservicios en producción utilizando herramientas como Spring Boot Admin para el monitoreo y Zipkin para el rastreo de llamadas distribuidas.
@@ -156,7 +156,7 @@
        - [Spring Boot Admin Documentation](https://codecentric.github.io/spring-boot-admin/current/)
        - [Zipkin Documentation](https://zipkin.io/)
      - **Código Ejemplo**:
-       - Implementación de monitoreo y rastreo: [GitHub - spring-monitoring-example](https://github.com/spring-guides/gs-spring-boot-admin)
+       - Implementación de monitoreo y rastreo: [GitHub - spring-monitoring-example](https://docs.spring.io/spring-boot/reference/actuator/monitoring.html)
 
    - **Calidad de Código**:
      - **Descripción**: Herramientas y técnicas para mantener código limpio y mantenible, como SonarQube para análisis estático y Checkstyle para seguir normas de estilo de código.
@@ -164,13 +164,13 @@
        - [SonarQube Documentation](https://docs.sonarqube.org/latest/)
        - [Checkstyle Documentation](https://checkstyle.sourceforge.io/)
      - **Código Ejemplo**:
-       - Integración de SonarQube en un proyecto Spring Boot: [GitHub - spring-sonarqube-example](https://github.com/spring-guides/gs-sonar)
+       - Integración de SonarQube en un proyecto Spring Boot: [Spring-sonarqube-example](https://www.baeldung.com/sonar-qube)
 
 **4. Conceptos de Contenerización**
    - **Descripción**: Contenerizar aplicaciones permite empaquetar software en contenedores portables, asegurando que se ejecuten de manera consistente en cualquier entorno. Esto es clave en microservicios para facilitar el despliegue y la escalabilidad.
    - **Referencias**:
-     - [Docker for Java Developers](https://www.docker.com/blog/docker-for-java-developers/)
-     - [Introduction to Containerization](https://www.redhat.com/en/topics/containers/what-is-containerization)
+     - [Docker for Java Developers](https://docs.docker.com/language/java/develop/)
+     - [Introduction to Containerization](https://www.redhat.com/en/topics/cloud-native-apps/what-is-containerization)
    - **Código Ejemplo**:
      - Contenerización básica de una aplicación Spring Boot: [GitHub - spring-boot-docker](https://github.com/spring-guides/gs-spring-boot-docker)
 
@@ -183,7 +183,7 @@
      - Creación de una imagen Docker para un microservicio Spring Boot: [GitHub - docker-spring-boot-example](https://github.com/spring-guides/gs-spring-boot-docker)
 
 
-![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/blob/main/images/custom-img.png.png)
+![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/blob/main/images/custom-img.png)
 
 ![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/blob/main/images/img-container.png)
 
@@ -210,7 +210,7 @@
      - **Pruebas Automatizadas**: Configuración de pruebas automatizadas en Postman, incluyendo validación de respuestas, tiempos de respuesta, y pruebas de escenarios negativos.
    - **Referencias**:
      - [Postman Documentation](https://learning.postman.com/docs/getting-started/introduction/)
-     - [API Testing with Postman](https://www.postman.com/api-testing/)
+     - [API Testing with Postman](https://www.postman.com/api-platform/api-testing)
    - **Código Ejemplo**:
      - Ejemplo de colección Postman para pruebas de un microservicio: [GitHub - postman-api-tests](https://github.com/postmanlabs/newman/blob/develop/examples/sample-collection.json)
 
@@ -220,9 +220,9 @@
      - **Ejecución de Pruebas de Carga**: Simulación de múltiples usuarios concurrentes y análisis del rendimiento del microservicio.
    - **Referencias**:
      - [k6 Documentation](https://k6.io/docs/)
-     - [Load Testing with k6](https://k6.io/docs/testing-guides/load-testing/)
+     - [Load Testing with k6](https://grafana.com/docs/k6/latest/examples/)
    - **Código Ejemplo**:
-     - Ejemplo de script de k6 para pruebas de carga: [GitHub - k6-load-test](https://github.com/grafana/k6-example-load-test)
+     - Ejemplo de script de k6 para pruebas de carga: [GitHub - k6-load-test](https://github.com/grafana/awesome-k6)
 
 **4. Construcción de Imágenes Docker (Dockerfile)**
    - **Descripción**: Un Dockerfile es un script que contiene una serie de instrucciones para construir una imagen Docker. En esta sección, se detalla cómo crear un Dockerfile eficiente para empaquetar el microservicio.
@@ -232,7 +232,7 @@
      - [Dockerfile Reference](https://docs.docker.com/engine/reference/builder/)
      - [Docker Best Practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
    - **Código Ejemplo**:
-     - Ejemplo de Dockerfile para un microservicio Spring Boot: [GitHub - spring-boot-dockerfile](https://github.com/spring-guides/gs-spring-boot-docker/blob/main/Dockerfile)
+     - Ejemplo de Dockerfile para un microservicio Spring Boot: [Spring-boot-dockerfile](https://spring.io/guides/gs/spring-boot-docker)
 
 **5. Buenas Prácticas de Construcción de Imágenes**
    - **Descripción**: La eficiencia y seguridad de las imágenes Docker son fundamentales. Esta sección explora técnicas para optimizar Dockerfiles y reducir el tamaño y vulnerabilidades de las imágenes.
@@ -240,7 +240,7 @@
      - **Seguridad**: Integración de herramientas para escaneo de vulnerabilidades en imágenes Docker.
    - **Referencias**:
      - [Docker Security Best Practices](https://docs.docker.com/engine/security/security/)
-     - [Slimming Down Docker Images](https://www.docker.com/blog/container-size-matters/)
+
    - **Código Ejemplo**:
      - Ejemplo de Dockerfile optimizado: [GitHub - optimized-dockerfile](https://github.com/GoogleContainerTools/distroless)
 
@@ -254,7 +254,7 @@
      - [Docker Run Reference](https://docs.docker.com/engine/reference/run/)
      - [Docker Networking](https://docs.docker.com/network/)
    - **Código Ejemplo**:
-     - Ejemplo de ejecución de un contenedor con Docker Run: [GitHub - docker-run-examples](https://github.com/docker/labs/blob/master/beginner/chapters/run.md)
+     - Ejemplo de ejecución de un contenedor con Docker Run: [GitHub - docker-run-examples](https://github.com/docker/labs/tree/master)
 
 ![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/blob/main/images/desa1.png)
 
@@ -284,9 +284,9 @@
      - **Monitoreo y Ajuste**: Herramientas y técnicas para monitorear el uso de recursos y ajustar la configuración de contenedores para un rendimiento óptimo.
    - **Referencias**:
      - [Resource Constraints in Docker](https://docs.docker.com/config/containers/resource_constraints/)
-     - [Monitoring Docker Performance](https://www.datadoghq.com/blog/monitor-docker-performance/)
+     - [Monitoring Docker Performance](https://lumigo.io/container-monitoring/docker-monitoring-9-tools-to-know-metrics-and-best-practices/))
    - **Código Ejemplo**:
-     - Ejemplo de limitación de recursos en un Dockerfile: [GitHub - docker-resource-limits](https://github.com/docker/docker/tree/master/examples)
+     - Ejemplo de limitación de recursos en un Dockerfile: [Docker-resource-limits](https://docs.docker.com/engine/containers/resource_constraints/)
 
 **3. Herramientas de Gestión de Contenedores**
    - **Descripción**: Existen diversas herramientas para la administración de contenedores que facilitan el monitoreo, escalado y gestión de aplicaciones en producción. Esta sección presenta algunas de las más utilizadas.
@@ -304,11 +304,11 @@
      - **Cloud**: Uso de servicios como Amazon ECS, Google Kubernetes Engine (GKE), y Azure Kubernetes Service (AKS) para el despliegue en la nube.
      - **Serverless**: Implementación de contenedores en plataformas serverless como AWS Fargate o Google Cloud Run.
    - **Referencias**:
-     - [Docker Swarm vs Kubernetes](https://www.docker.com/blog/docker-swarm-vs-kubernetes/)
+     - [Docker Swarm vs Kubernetes](https://www.ibm.com/think/topics/docker-swarm-vs-kubernetes#:~:text=Kubernetes%20offers%20an%20efficient%20means,deploy%20and%20easy%20to%20manage.)
      - [Serverless Containers with AWS Fargate](https://aws.amazon.com/fargate/)
-     - [Deploying Docker on GCP](https://cloud.google.com/solutions/deploying-docker-containers)
+     - [Deploying Docker on GCP](https://cloud.google.com/compute/docs/containers/deploying-containers)
    - **Código Ejemplo**:
-     - Ejemplo de despliegue en AWS Fargate: [GitHub - aws-fargate-example](https://github.com/aws-samples/amazon-ecs-fargate-sample)
+     - Ejemplo de despliegue en AWS Fargate: [GitHub - aws-fargate-example](https://github.com/aws-samples/amazon-ecs-fargate-consul-connect-example)
 
 
 ### Sesión 5: Gobierno y Documentación de Microservicios
@@ -352,8 +352,8 @@
      - **On-premises**: Ventajas y desventajas de mantener la infraestructura en local, incluyendo control total y costos fijos.
      - **Cloud**: Beneficios de la escalabilidad automática, modelos de pago por uso, y alta disponibilidad en la nube.
    - **Referencias**:
-     - [Cloud vs On-Premises: The Pros and Cons](https://www.redhat.com/en/resources/cloud-vs-on-premise-infographic)
-     - [Understanding Cloud Native Applications](https://www.cncf.io/blog/2020/08/27/understanding-cloud-native-applications/)
+     - [Cloud vs On-Premises: The Pros and Cons](https://www.redhat.com/architect/cloud-vs-on-premises)
+     - [Understanding Cloud Native Applications](https://www.cncf.io/online-programs/understanding-cloud-native-application-bundles/)
    - **Código Ejemplo**:
      - No se requiere código para esta sección, enfoque en comparativas y decisiones estratégicas.
 
@@ -373,9 +373,9 @@
      - **Gestión y Actualización**: Uso de herramientas como `kubectl` para aplicar, actualizar y gestionar recursos en un clúster Kubernetes.
    - **Referencias**:
      - [Kubernetes Deployment Documentation](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
-     - [Kubernetes YAML Best Practices](https://kubernetes.io/blog/2019/06/20/managing-kubernetes-objects-using-kustomize/)
+     - [Kubernetes Production Best Practices](https://learnk8s.io/production-best-practices))
    - **Código Ejemplo**:
-     - Ejemplo de manifiestos YAML para Kubernetes: [GitHub - kubernetes-yaml-example](https://github.com/kubernetes/examples)
+     - Ejemplo de manifiestos YAML para Kubernetes: [GitHub - kubernetes-yaml-example](https://github.com/Java-Techie-jt/springboot-k8s-example)
 
 ![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/blob/main/images/yaml.png)
 
@@ -401,9 +401,8 @@
    - **Referencias**:
      - [DevSecOps Practices and Tools](https://www.redhat.com/en/topics/devops/what-is-devsecops)
      - [Snyk Documentation](https://snyk.io/docs/)
-     - [Aqua Security Documentation](https://docs.aquasec.com/)
    - **Código Ejemplo**:
-     - Pipeline de Jenkins con integración de seguridad usando Snyk: [GitHub - jenkins-snyk-example](https://github.com/snyk-labs/snyk-jenkins-pipeline-example)
+     - Pipeline de Jenkins con integración de seguridad usando Sonarqube: [Jenkins-Sonarqube-example](https://callmezydd.medium.com/unlocking-code-quality-integrating-jenkins-pipeline-with-sonarqube-and-github-7f450f1c90ab))
 
 **3. Pipelines de CI/CD**
    - **Descripción**: La integración continua y el despliegue continuo son fundamentales para la entrega rápida y confiable de software. Aquí aprenderás a construir pipelines CI/CD optimizados para Kubernetes.
@@ -413,8 +412,9 @@
      - [Jenkins Pipeline Documentation](https://www.jenkins.io/doc/book/pipeline/)
      - [GitLab CI/CD Documentation](https://docs.gitlab.com/ee/ci/)
      - [GitHub Actions Documentation](https://docs.github.com/en/actions)
+     - [Azure DevOps Documentation](https://learn.microsoft.com/en-us/azure/devops/?view=azure-devops)
    - **Código Ejemplo**:
-     - Ejemplo de pipeline CI/CD para despliegue en Kubernetes: [GitHub - kubernetes-cicd-pipeline-example](https://github.com/cloudposse/terraform-aws-eks-gitlab-ci)
+     - Ejemplo de pipeline CI/CD para despliegue en Kubernetes: [GitHub - kubernetes-cicd-pipeline-example](https://github.com/Akshit8/ci-cd-k8s)
 
 **4. Logging**
    - **Uso de Suite ELK para Gestión de Logs**
@@ -435,18 +435,18 @@
        - [Logback Project](http://logback.qos.ch/)
        - [Spring Boot Logging Documentation](https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.logging)
      - **Código Ejemplo**:
-       - Ejemplo de configuración avanzada de Logback: [GitHub - spring-boot-logback-example](https://github.com/spring-projects/spring-boot/tree/main/spring-boot-samples/spring-boot-sample-logback)
+       - Ejemplo de configuración avanzada de Logback: [GitHub - spring-boot-logback-example](https://github.com/rfding/spring-boot-elk-sample)
 
 **5. Estrategias de Despliegue en Kubernetes con GitOps**
    - **Descripción**: GitOps es un enfoque que utiliza repositorios Git como fuente única de verdad para la automatización de despliegues en Kubernetes. Aquí explorarás cómo implementar GitOps para despliegues continuos y confiables.
      - **Herramientas GitOps**: Uso de herramientas como ArgoCD y Flux para automatizar el despliegue y la gestión del ciclo de vida de aplicaciones en Kubernetes.
      - **Flujos de Trabajo GitOps**: Implementación de pipelines GitOps para aplicar cambios automáticamente a través de repositorios Git.
    - **Referencias**:
-     - [What is GitOps?](https://www.weave.works/technologies/gitops/)
+     - [What is GitOps?](https://www.redhat.com/es/topics/devops/what-is-gitops)
      - [ArgoCD Documentation](https://argo-cd.readthedocs.io/en/stable/)
      - [Flux CD Documentation](https://fluxcd.io/docs/)
    - **Código Ejemplo**:
-     - Ejemplo de despliegue de aplicaciones con GitOps usando ArgoCD: [GitHub - argocd-gitops-example](https://github.com/argoproj/argo-cd-example-apps)
+     - Ejemplo de despliegue de aplicaciones con GitOps usando ArgoCD: [GitHub - argocd-gitops-example](https://github.com/argoproj/argocd-example-apps)
 
 ![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/blob/main/images/password1.png)
 
@@ -465,9 +465,9 @@
        - **Integración con Microservicios**: Instrumentación de microservicios para generar trazas y métricas utilizando OpenTelemetry.
      - **Referencias**:
        - [OpenTelemetry Documentation](https://opentelemetry.io/docs/)
-       - [Spring Boot and OpenTelemetry Integration](https://opentelemetry.io/docs/instrumentation/java/spring-boot/)
+       - [Spring Boot and OpenTelemetry Integration](https://opentelemetry.io/docs/instrumentation/java/)
      - **Código Ejemplo**:
-       - Ejemplo de integración de OpenTelemetry en una aplicación Spring Boot: [GitHub - opentelemetry-spring-boot-example](https://github.com/open-telemetry/opentelemetry-java-instrumentation/tree/main/examples/spring-boot)
+       - Ejemplo de integración de OpenTelemetry en una aplicación Spring Boot: [GitHub - opentelemetry-spring-boot-example](https://github.com/open-telemetry/opentelemetry-java-examples#java-opentelemetry-examples)
    
    - **Grafana y Prometheus**
      - **Descripción**: Grafana y Prometheus son herramientas populares para la visualización y monitoreo de sistemas. Prometheus actúa como un sistema de monitoreo y almacenamiento de series temporales, mientras que Grafana se usa para la visualización de datos.
@@ -486,7 +486,7 @@
        - **Integración de Microservicios en EDA**: Cómo los microservicios pueden interactuar mediante eventos en una arquitectura distribuida.
      - **Referencias**:
        - [Event-Driven Architecture Overview](https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/event-driven)
-       - [Spring Boot Event-Driven Microservices](https://spring.io/blog/2020/11/24/spring-tips-asynchronous-messaging-with-spring-events)
+       - [Spring Boot Event-Driven Microservices](https://spring.io/event-driven)
    
    - **Broker de Mensajería RabbitMQ**
      - **Descripción**: RabbitMQ es un broker de mensajería ampliamente utilizado en arquitecturas orientadas a eventos. Facilita la comunicación entre microservicios mediante el intercambio de mensajes asíncronos.
@@ -503,7 +503,6 @@
        - **Configuración de MDB**: Configuración de beans que manejan mensajes asíncronos en aplicaciones Java EE.
        - **Integración con RabbitMQ**: Uso de MDB en conjunto con RabbitMQ para procesar mensajes en una arquitectura orientada a eventos.
      - **Referencias**:
-       - [Java EE Message-Driven Beans Documentation](https://javaee.github.io/javaee-spec/javadocs/javax/ejb/MessageDriven.html)
        - [Using MDB with RabbitMQ](https://www.rabbitmq.com/jms-client.html)
      - **Código Ejemplo**:
        - Ejemplo de implementación de MDB con RabbitMQ: [GitHub - rabbitmq-mdb-example](https://github.com/rabbitmq/rabbitmq-java-client)
