@@ -11,9 +11,9 @@
    - **Referencias**:
      - [Patterns of Enterprise Application Architecture (Martin Fowler)](https://martinfowler.com/eaaCatalog/)
      - [Microservices Patterns (Chris Richardson)](https://microservices.io/patterns/)
-   - **Código Ejemplo**:
-     - Ejemplo de arquitectura basada en eventos con Kafka: [GitHub - event-driven-kafka](https://github.com/confluentinc/examples/tree/7.0.1-post/microservices-orders)
-
+   - **Ejemplo**:
+     - Patrones de Arquitectura: [Definiciones de Patrones](https://medium.com/@maniakhitoccori/los-10-patrones-comunes-de-arquitectura-de-software-d8b9047edf0b)
+     
 **2. Patrones de Diseño**
    - **Descripción**: Los patrones de diseño son soluciones reutilizables a problemas recurrentes en el diseño de software. En el desarrollo de microservicios, los patrones más relevantes incluyen:
      - **Circuit Breaker**: Previene el fallo en cascada en caso de que un microservicio falle.
@@ -33,8 +33,8 @@
    - **Referencias**:
      - [Building Microservices: Designing Fine-Grained Systems (Sam Newman)](https://www.oreilly.com/library/view/building-microservices/9781491950340/)
      - [The Twelve-Factor App](https://12factor.net/)
-   - **Código Ejemplo**:
-     - Ejemplo de despliegue escalable con Kubernetes: [GitHub - k8s-examples](https://github.com/kubernetes/examples)
+   - **Ejemplo**:
+     - Atributos de Calidad Cloud Native: [Principios Cloud Native]([https://github.com/kubernetes/examples](https://www.aplyca.com/blog/cloud-native-principios-aplicaciones-y-desafios))
 
 **4. Conceptos de Microservicios**
    - **Descripción**: Los microservicios son un estilo arquitectónico donde una aplicación se construye como un conjunto de servicios pequeños e independientes que se ejecutan en sus propios procesos y se comunican entre sí a través de interfaces bien definidas (generalmente HTTP/REST o mensajes).
@@ -43,6 +43,7 @@
      - [What are Microservices? (AWS)](https://aws.amazon.com/microservices/)
    - **Código Ejemplo**:
      - Ejemplo de aplicación Spring Boot basada en microservicios: [GitHub - spring-microservices-example](https://github.com/TechPrimers/learning-path-spring-boot-microservices)
+     - Definiciones de Microservicios: [Arquitectura Orientada a Microservicios](https://www.redhat.com/es/topics/microservices/what-are-microservices)
 
 
 ![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/blob/main/images/int-eda.png)
