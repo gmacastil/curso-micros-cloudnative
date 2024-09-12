@@ -1,7 +1,7 @@
 
-### Sesión 1: Fundamentos de Arquitectura y Microservicios
+# Temática 1: Fundamentos de Arquitectura y Microservicios
 
-#### Objetivo: Comprender los fundamentos de la arquitectura de software y cómo los microservicios se integran en ella.
+## Objetivo: Comprender los fundamentos de la arquitectura de software y cómo los microservicios se integran en ella.
 
 **1.Patrones de Arquitectura**
    - **Descripción**: Los patrones de arquitectura proporcionan soluciones reutilizables a problemas comunes en el diseño de software. En el contexto de los microservicios, algunos patrones relevantes incluyen:
@@ -84,9 +84,9 @@
 ![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/blob/main/images/cloud1.png)
 
 
-### Sesión 2: Desarrollo de Microservicios con Spring Boot
+# Temática 2: Desarrollo de Microservicios con Spring Boot
 
-#### Objetivo: Aprender a desarrollar microservicios utilizando Spring Boot 3 y aplicar buenas prácticas en su construcción.
+## Objetivo: Aprender a desarrollar microservicios utilizando Spring Boot 3 y aplicar buenas prácticas en su construcción.
 
 **1. Microservicios en Spring Boot 3**
    - **Descripción**: Spring Boot 3 ofrece un conjunto de herramientas y bibliotecas optimizadas para el desarrollo de microservicios. Con soporte mejorado para Java 17 y GraalVM, Spring Boot 3 permite construir aplicaciones más rápidas y eficientes.
@@ -188,9 +188,9 @@
 
 ![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/blob/main/images/img-container.png)
 
-### Sesión 3: Construcción y Testing de Microservicios
+# Temática 3: Construcción y Testing de Microservicios
 
-#### Objetivo: Desarrollar y probar un microservicio completo con acceso a datos, aplicando buenas prácticas en la construcción de imágenes Docker.
+## Objetivo: Desarrollar y probar un microservicio completo con acceso a datos, aplicando buenas prácticas en la construcción de imágenes Docker.
 
 **1. Paso a Paso: Construcción de un Microservicio con Acceso a Datos**
    - **Descripción**: Esta sección se enfoca en guiar a los participantes en la creación de un microservicio desde cero que interactúe con una base de datos, utilizando Spring Data JPA para la gestión de datos.
@@ -263,9 +263,9 @@
 
 ![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/blob/main/images/desa3.png)
 
-### Sesión 4: Gestión y Despliegue de Contenedores
+# Temática 4: Gestión y Despliegue de Contenedores
 
-#### Objetivo: Profundizar en la gestión de contenedores y en su despliegue en diferentes entornos.
+## Objetivo: Profundizar en la gestión de contenedores y en su despliegue en diferentes entornos.
 
 **1. Ejecución de Contenedores con Docker-Compose**
    - **Descripción**: Docker Compose es una herramienta que permite definir y gestionar aplicaciones multicontenedor. En esta sección, aprenderás a orquestar múltiples contenedores, configurando redes, volúmenes, y dependencias entre servicios.
@@ -312,9 +312,9 @@
      - Ejemplo de despliegue en AWS Fargate: [GitHub - aws-fargate-example](https://github.com/aws-samples/amazon-ecs-fargate-consul-connect-example)
 
 
-### Sesión 5: Gobierno y Documentación de Microservicios
+# Temática 5: Gobierno y Documentación de Microservicios
 
-#### Objetivo: Implementar estrategias de gobierno, documentación y monitorización de microservicios.
+## Objetivo: Implementar estrategias de gobierno, documentación y monitorización de microservicios.
 
 **1. Gobierno de Microservicios**
    - **Descripción**: El gobierno de microservicios es esencial para mantener la cohesión, seguridad y eficiencia de un sistema distribuido. Esta sección aborda prácticas y herramientas clave para la gobernanza, incluyendo políticas de versionado, descubrimiento de servicios, y autenticación/autorización.
@@ -348,9 +348,9 @@
    - **Código Ejemplo**:
      - Ejemplo de uso de Spring Boot Actuator con Kubernetes: [GitHub - actuator-kubernetes-example](https://github.com/spring-guides/gs-actuator-service)
 
-### Sesión 6: Kubernetes
+# Temática 6: Kubernetes
 
-#### Objetivo: Implementar aplicaciones en Kubernetes.
+## Objetivo: Implementar aplicaciones en Kubernetes.
 
 **1. Arquitecturas On-premises vs Cloud**
    - **Descripción**: Esta sección proporciona una comparativa detallada entre la implementación de microservicios en entornos on-premises y en la nube, destacando las diferencias en términos de infraestructura, escalabilidad, costos, y mantenimiento.
@@ -395,9 +395,9 @@
 
 ![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/blob/main/images/yaml.png)
 
-### Sesión 7: DevSecOps
+# Temática 7: DevSecOps
 
-#### Objetivo: Comprender los conceptos y prácticas de automatización y control en el ciclo de vida de desarrollo.
+## Objetivo: Comprender los conceptos y prácticas de automatización y control en el ciclo de vida de desarrollo.
 
 
 **1. Conceptos de DevSecOps**
@@ -460,9 +460,9 @@
 
 ![Alt text](https://github.com/gmacastil/curso-micros-cloudnative/blob/main/images/secretos2.png)
 
-### Sesión 8: Observabilidad en Microservicios
+# Temática 8: Observabilidad en Microservicios
 
-#### Objetivo: Integrar la observabilidad sobre arquitecturas orientadas a microservicios
+## Objetivo: Integrar la observabilidad sobre arquitecturas orientadas a microservicios
 
 **1. Observabilidad**
    - **Collectores de OpenTelemetry**
@@ -485,9 +485,9 @@
      - **Código Ejemplo**:
        - Ejemplo de configuración de Prometheus y Grafana para monitorear un clúster Kubernetes: [GitHub - prometheus-grafana-k8s-example](https://github.com/prometheus-operator/kube-prometheus)
 
-### Sesión 9: Arquitecturas EDA
+# Temática 9: Arquitecturas EDA
 
-#### Objetivo: Comprender los conceptos de las arquitecturas orientadas a eventos
+## Objetivo: Comprender los conceptos de las arquitecturas orientadas a eventos
 
 **1. Arquitecturas EDA (Event-Driven Architecture)**
    - **Implementación de Arquitecturas Orientadas a Eventos**
