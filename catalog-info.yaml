@@ -1,19 +1,21 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: curso-micros-cloudnative
-  description: Repositorio para un curso sobre microservicios y aplicaciones nativas en la nube utilizando tecnologías como Docker, Kubernetes, y patrones de diseño.
   annotations:
     backstage.io/techdocs-ref: dir:.
     github.com/project-slug: gmacastil/curso-micros-cloudnative
     sonarqube.org/project-key: curso-micros-cloudnative
+  description: "Repositorio para un curso sobre microservicios y aplicaciones nativas\
+    \ en la nube utilizando tecnolog\xEDas como Docker, Kubernetes, y patrones de\
+    \ dise\xF1o."
+  name: curso-micros-cloudnative
   tags:
-    - docker
-    - kubernetes
-    - java
-    - patronesdediseño
+  - docker
+  - kubernetes
+  - java
+  - "patronesdedise\xF1o"
 spec:
-  type: service
-  owner: gmacastil
   lifecycle: production
+  owner: gmacastil
   system: dummy
+  type: service
